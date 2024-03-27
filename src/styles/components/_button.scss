@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button {
     padding: 12px;
     font-size: 18px;
@@ -5,10 +7,16 @@
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
+    border-radius: 5px;
+
+    &:hover {
+        box-shadow: 0 5px 5px 5px rgba(variables.$blue1, .4);
+        transform: scale(1.2);
+    }
 
     &--primary {
         color: #fff;
-        background-color: #4f2ac3;
+        background-color: variables.$pink;
     }
 
     @media (max-width: 1024px) {

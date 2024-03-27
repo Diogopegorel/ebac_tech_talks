@@ -11,6 +11,7 @@
     font-family: Roboto, sans-serif;
     color: variables.$text-color1;
     list-style: none;
+    transition: all ease .3s;
 }
 
 .container {
@@ -25,5 +26,13 @@
 
     @media (max-width: 640px) {
         max-width: 80%;
+    }
+}
+
+img {
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(1.2);
     }
 }
